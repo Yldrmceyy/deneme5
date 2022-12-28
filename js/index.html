@@ -1,0 +1,373 @@
+<html>
+	<head>
+		<script>
+		   document.write("Hello World");
+		   console.log("Konsala Yaz");
+		   //alert("Alert Geldi!");
+		   var a = "Hello";
+		   var b = "World";
+		   var c = a + b;
+		   document.write("<br>" +c);
+		   let aa =10;
+		   let bb =20;
+		   let cc =aa + bb;
+		   document.write("<br>" + cc) ;
+		   const isim = "Ceylan";
+		   document.write("<br>" + isim);
+		   let sayi1,sayi2,toplam;
+		   sayi1=20;
+		   sayi2=20;
+		   toplam= sayi1 +sayi2;
+		   document.write("<br>" + toplam);
+		   const isimler = ["Ahmet","Mehmet","Ali","Veli"];
+		   document.write("<br>" + isimler);
+		   document.write("<br>" + isimler[0]);
+		   isimler[0]="Mustafa";
+		   document.write("<br>" + isimler[0]);
+		   isimler.push("Ceylan");
+		   document.write("<br>" + isimler);
+		   const aracDetay = {
+		   
+		   marka:"Hyundai" ,
+		   model:"i20", 
+		   renk:"Beyaz"};
+		   document.write("<br>" + aracDetay.model);
+		   document.write(
+		   "<br>Aracımın markası" + aracDetay.marka +
+		   "<br>Aracımın modeli" + aracDetay.model +
+		   "<br>Aracımın rengi" + aracDetay.renk 
+		   );
+		   let x =100;
+		   let y =5;
+		   document.write("<br>");
+		   document.write(x + y);
+		   
+		   document.write("<br>");
+		   document.write(x - y);
+		   
+		   document.write("<br>");
+		   document.write(x * y);
+		   
+		   document.write("<br>");
+		   document.write(x / y);
+		   
+		   document.write("<br>");
+		   document.write(x % y);
+		   
+		   document.write("<br>");
+		   document.write(x ** y);
+		   
+		   document.write("<br>");
+		   document.write(x++);
+		   /*  x' değerini 1 artırır
+		   
+			   x = x + 1;
+			*/
+		   document.write("<br>");
+		   document.write(y--);   
+           /*  y' değerini 1 azaltır
+		   
+			   y = y - 1;
+			*/
+		   let xx= 5;
+		   let yy =5;
+		   document.write("<br>");
+		   document.write(xx + yy);
+		   /* Yukarıdaki örnek hatalı işleme göre* 
+		   
+		   (**)üs olarak yazıyo */
+		        
+			let k= 100;
+		    let m =50;
+			document.write("<br>");
+		    document.write(k += m);	
+		    let kk ="Merhaba";
+		    let mm ="Dünya";
+			let nn ="Nasılsın";
+			document.write("<br> İlk kk değeri:"+kk);
+		    document.write("<br>");
+			document.write(kk += mm);
+			/*yukarıda kk=kk+mm*/
+			document.write("<br>");
+			document.write(kk += nn);
+			/*yukarıda kk(Merhaba Dünya)= kk+nn*/
+			document.write("<br> İşlemlerden sonra kk değeri:"+kk);
+			
+			let number = 10;
+			if (number == 20) {
+				document.write("<br>sayı 20'ye eşittir");
+			}
+			if (number <= 20) {
+				document.write("<br>sayı 20'den küçük ya da 20'ye eşittir");
+			}
+			if (number >= 10) {
+				document.write("<br>sayı 20'dan büyük ya da 10'a eşittir");
+			}
+			if (number!= 10) {
+				document.write("<br>sayı 10'a eşit değildir");
+			}
+			const number2 =10;
+			if (number2 == 5) {
+				document.write("<br>sayı  5'e eşittir.");
+			} else {
+				document.write("<br>sayı 5'ten farklıdır");
+			}
+			const number3 =30;
+			if (number3 == 20) {
+				document.write("<br>sayı 20'ye eşittir");
+			} 
+			else if (number3 < 20) {
+				document.write("<br>sayı 20'den küçüktr.");
+			} else {
+				document.write("<br>sayı 20'den büyüktür.");
+			}
+		
+			/*const number4 =30;
+			if (number4 < 20 && number4 > 10{
+				document.write("<br>sayı 20'den küçük 10'dan büyüktür.")
+			}
+			if (number4 < 20 (ıı olcalk)  number4 > 10{
+				document.write("<br>sayı 20'den küçük 10'dan büyüktür.")
+			}
+			*/
+			
+			
+
+			const ilksayi=10;
+			const ikincisayi=17;
+			const hesapla= ilksayi* ikincisayi;
+			if(hesapla % 2== 0){
+				document.write("<br>");
+				document.write(hesapla);
+				document.write("sayısı çift bir sayıdır.");
+			} else {
+				document.write("<br>");
+				document.write(hesapla);
+				document.write("sayısı tek bir sayıdır.");
+			}
+			
+			 /*öğrencinin vize1 vize2 ve final notlarının ortalamasını alın.eger ort ;
+			 85 ile 100 arasında iseekrana;öğrencinin notu:AA           
+			 70 ile 84 arasında iseekrana;öğrencinin notu:BB   
+			 45 ile 69 arasında iseekrana;öğrencinin notu:CC   
+			 30 ile 44 arasında iseekrana;öğrencinin notu:DD  
+			 0 ile 29 arasında iseekrana;öğrencinin notu:FF   
+			 */
+			 
+			let vize1,vize2,finals ;
+			vize1=100;
+			vize2=90;
+			finals=90;
+			ortalama=(vize1+vize2+finals)/3;
+			if (ortalama >= 85 && ortalama <=100){
+				document.write("<br>Öğrencinin notu AA");
+			} else if (ortalama >=70 && ortalama <=84){
+				document.write("<br>Öğrencinin notu BB");
+			} else if (ortalama >=45 && ortalama <=69){
+				document.write("<br>Öğrencinin notu CC");
+			} else if (ortalama >=30 && ortalama <=44){
+				document.write("<br>Öğrencinin notu DD");
+			} else if (ortalama >=30 && ortalama <=44){
+				document.write("<br>Öğrencinin notu FF");
+			}
+			
+			document.write ("<br>");
+			const d= new Date();
+			let month = d.getMonth ();
+			switch (month) {
+				case 0:
+				document.write("Ocak");
+				break;
+				case 1:
+				document.write("Şubat");
+				break;
+				case 2:
+				document.write("Mart");
+				break;
+				case 3:
+				document.write("Nisan");
+				break;
+				case 4:
+				document.write("Mayıs");
+				break;
+				case 5:
+				document.write("Haziran");
+				break;
+				case 6:
+				document.write("Temmuz");
+				break;
+				case 7:
+				document.write("Ağustos");
+				break;
+				case 8:
+				document.write("Eylül");
+				break;
+				case 9:
+				document.write("Ekim");
+				break;
+				case 10:
+				document.write("Kasım");
+				break;
+				case 11:
+				document.write("Aralık");
+				break;
+			default:
+				document.write("Böyle bir ay yok");
+				break;
+			}
+			for (let i = 0;i <10; i++) {
+				document.write("<br>" +i);
+			}
+			for (let f = 10;f > 0; f--) {
+				document.write("<br>" +f);
+			}
+			
+			/* 20'den geri doğru sayıları kendi aralarında toplayıp,
+			sonucunu ekrana yazdırın*/
+			
+			
+			
+			/*10 dan geriye sayıları saydırın.
+			ekrana sayıları yazdırın.
+			sayı 3 ise ekrana; son 3 kaldı.
+			sayı 2 ise ekrana; az kaldı bitiyor.
+			sayı 1 ise ekrana; bitti bitiyor.
+			sayı 0 ise ekrana; bitti.    yazsın */
+			
+			
+			for (let aaa = 10;aaa >= 0; aaa--) {
+				if(aaa ==3) {
+					document.write("<br> son 3 kaldı");
+				}else if (aaa==2) {
+					document.write("<br> az kaldı bitiyor");
+				}else if (aaa==1) {
+					document.write("<br> bittibitiyor");
+				}else if (aaa==0) {
+					document.write("<br> bitti");
+				}
+			}
+			function ekranaGetir(){
+				document.write("Fonksiyon İçerisinden Gelen Yazı");
+				}
+			function dataDondur(){
+				return 15*4;
+				}
+				document.write("<br>" + dataDondur());
+				
+			function dataYazdir(a){
+				let toplam = 0;
+				toplam = (18*a)/100;
+				document.write(toplam);
+			}
+			document.write("<br>");
+			dataYazdir(77);
+			
+			function dersNotuGetir(a){
+				if (a >= 85 && a <=100){
+				return("AA");
+			} else if (a >=70 && a <=84){
+				return("BB");
+			} else if (a >=45 && a <=69){
+				return("CC");
+			} else if (a >=30 && a <=44){
+				return("DD");
+			} else {
+				return("FF");
+			}
+			}
+			document.write("<br>Girilen Nota Göre Öğrencinin Geçer Notu:" + dersNotuGetir(10));
+
+			function kurHesapla (a,b) {
+            if( b== "USD") {
+				return a *18.57 ;
+			}else if(b== "EUR"){
+				return a*18.40 ;
+			}else if(b== "GBP"){
+				return a* 21.10 ;
+			}else {
+				return "Bu kur sistemde bulunmuyor" ;
+			}
+		}
+		document.write("<br> Gönderilen meblağnın TL karşılığı : " + kurHesapla(54,"USD") )
+		 
+
+		/*
+		  fonksiona bir sayı gönderin.
+		  Gönderilen sayı kadar ekrana JS çok güzel yazsın alt alta
+		*/
+		 function jsYazdir(a) {
+			for(let i=0;i < a;i++) {
+				document.write ("<br> JS çok güzel");
+			}
+		 }
+		 jsYazdir(6)
+ 
+		/* fonksiyona gönderilen sayının tek mi çift mi olduğunu ekrana 
+		yazdıran fonksiyonu oluşturun
+		*/
+		 function tekCift (a) {
+		if(a % 2== 0){
+				document.write("<br>Sayı Çift");
+			} else {
+				document.write("<br>Sayı Tek");
+			}
+		}
+		tekCift(1414602); 
+		
+		</script>
+		
+	</head>	
+	<body>
+		<br>
+		<button onClick="window.print()">Yazdir</button>
+		<div id="yaz"></div>
+		<script>ekranaGetir()</script>
+		<br>
+		<span id="yazi">Merhaba</span>
+		<br>
+		<button onClick="degistir()">Stil Değiştir</button>
+
+		<img src="img/lamba1.png" id="lamba">
+		<button onClick="yak()">Lambayı Yak</button>
+		<button onClick="sondur()">Lambayı Söndür</button>
+		<button class="takiple" onclick="toTop()">Işınla Bizi Scottty </button>
+	</body>
+	<script>
+		
+			function degistir(){
+				document.getElementById("yazi").style.color="Red";
+				document.getElementById("yazi").style.fontSize="32";
+			}
+		   	document.getElementById("yaz").innerHTML= "Div'e Yaz";
+
+		   	function yak() {
+			document.getElementById("lamba").src="img/lamba2.png";
+		   }
+			function sondur() {
+			document.getElementById("lamba").src="img/lamba1.png ";
+		   }
+		   function toTop() {
+			document.body.scrollTop=0 ;
+		   }
+		   let girilenSayi= prompt ("0 ile 100 arasında bi sayı giriniz.")
+		   tekCift(girilenSayi);
+
+
+		   /*
+		   	Yazılıma rastgele bir sayı tutturun .
+			Prompt özelliği ile kullanıcının 3 hakta bu sayıyı 
+			bulmasını sağlayın.Eğer 3 hak sonucunda sayıyı bulamazsa ekrana;
+			Bilemediniz.Benim belirlerdiğim sayı  şu. --yazsın
+
+			hak mak 
+		*/
+
+	</script>	
+	<style>
+		.takiple {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+	</style>
+</html>
